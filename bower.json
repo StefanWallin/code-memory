@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "modernizr": "~2.6.2",
-    "jquery": "~1.10.2"
+    "jquery": "~1.10.2",
+    "knockout.js": "~3.0.0"
   },
   "devDependencies": {}
 }
