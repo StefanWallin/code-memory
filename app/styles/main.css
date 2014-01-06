@@ -1,29 +1,52 @@
+@import 'card.css';
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
 body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+	background: linear-gradient(rgb(154,223,230), rgb(141,201,203));
+	height: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+}
+body:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMV…HwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==);
 }
 
 .hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
+	margin: 50px auto 0 auto;
+	width: 300px;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 30px;
+	background-color: #eee;
+	border-radius: 6px;
+	padding: 60px;
 }
 
 .hero-unit h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+	font-size: 60px;
+	line-height: 1;
+	letter-spacing: -1px;
 }
 
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+.perspective {
+	position: relative;
+	perspective: 800px;
+	-webkit-perspective: 800px;
 }
