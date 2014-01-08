@@ -1,8 +1,39 @@
-
+.cardBackground {
+	float: left;
+	margin-right: 10px;
+	border-radius: 10px;
+	/*background: blanchedalmond;*/
+	box-shadow: inset 0 0 50px rgba(139,95,69,0.7),inset 0 0 240px rgba(139,95,69,0.7), 0 0 240px rgba(139,95,69,0.09);
+	width: 90px;
+	height: 130px;
+	padding: 5px;
+	opacity: 0.9;
+}
+.cardBackground:nth-child(4n+1) {
+	-webkit-transform: rotateZ( 3deg );
+	   -moz-transform: rotateZ( 3deg );
+	    -ms-transform: rotateZ( 3deg );
+	     -o-transform: rotateZ( 3deg );
+	        transform: rotateZ( 3deg );
+}
+.cardBackground:nth-child(4n+2) {
+	-webkit-transform: rotateZ( -2deg );
+	   -moz-transform: rotateZ( -2deg );
+	    -ms-transform: rotateZ( -2deg );
+	     -o-transform: rotateZ( -2deg );
+	        transform: rotateZ( -2deg );
+}
+.cardBackground:nth-child(4n+4) {
+	-webkit-transform: rotateZ( -1deg );
+	   -moz-transform: rotateZ( -1deg );
+	    -ms-transform: rotateZ( -1deg );
+	     -o-transform: rotateZ( -1deg );
+	        transform: rotateZ( -1deg );
+}
 .card {
 	color: #666;
-	width: 180px;
-	height: 260px;
+	width: 80px;
+	height: 120px;
 	text-align: center;
 	position: absolute;
 	-webkit-transform-style: preserve-3d;
@@ -14,17 +45,19 @@
 	top: 0;
 	left: 0;
 	display: block;
-	border: 4px solid #f0e8dd;
-	box-shadow: 10px 5px 35px rgba(0,0,0,0.05);
-	border-radius: 8px;
 	width: 100%;
 	height: 100%;
+	border: 1px solid #555;
+	box-shadow: 10px 5px 35px rgba(0,0,0,0.05);
+	border-radius: 8px;
 	margin: 0;
 	padding: 10px 5px;
-	background: linear-gradient( -25deg, hsla(39,60%,90%,1), hsla(39,100%,96%,1));
+	background: antiquewhite;
 	-webkit-backface-visibility: hidden;
 }
 .card .front {
+	line-height: 90px;
+	font-size: 32px;
 }
 .card .back {
 	transform: rotateY( 180deg );

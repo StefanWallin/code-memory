@@ -26,12 +26,29 @@
 		<![endif]-->
 
 
-		<section class="perspective" data-bind="foreach: cards">
-			<div class="card" data-bind="click: flip, css: className">
-				<figure class="front" data-bind="text: front"></figure>
-				<figure class="back" data-bind="text: back"></figure>
-			</div>
-		</section>
+		<div class="perspective">
+			<section class="cards" data-bind="foreach: cards">
+				<div class="cardBackground">
+					<div class="" data-bind="click: flip, css: className">
+						<figure class="front">
+							<div class="logo">
+								<div class="c1"></div>
+								<div class="c2"></div>
+								<div class="c3"></div>
+								<div class="m1"></div>
+								<div class="m2"></div>
+								<div class="m3"></div>
+								<div class="m4"></div>
+							</div>
+						</figure>
+						<figure class="back" data-bind="text: content"></figure>
+					</div>
+				</div>
+			</section>
+			<section class="hand">
+
+			</section>
+		</div>
 
 
 		<!-- build:js scripts/vendor.js -->
