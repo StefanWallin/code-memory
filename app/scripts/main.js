@@ -57,3 +57,7 @@ app.addCards('code1', 'visual1');
 app.addCards('code2', 'visual2');
 app.addCards('code3', 'visual3');
 app.addCards('code4', 'visual4');
+app.addCards('code5', 'visual5');
+app.addCards('code6', 'visual6');
+app.addCards('code7', 'visual7');
+app.addCards('code8', 'visual8');
