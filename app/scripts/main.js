@@ -34,16 +34,12 @@ function AppViewModel() {
 	self.result = 0;
 	self.cards = ko.observableArray([]);
 	self.addCards = function (code, visual) {
-        console.log('adding multiple cards');
         var identifier = Date.now();
-        console.log(identifier);
         self.addCard(identifier, code);
         self.addCard(identifier, visual);
-        console.log("tada!");
 	};
     self.addCard = function(identifier, content) {
         var card = new cardViewModel();
-        console.log('adding card');
         card.content(content);
         card.identifier(identifier);
         self.cards.push(card);
