@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 html {
 	height: 100%;
@@ -21,21 +23,26 @@ body:before {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMV…HwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==);
 }
 
-.hero-unit {
-	margin: 50px auto 0 auto;
-	width: 300px;
-	font-size: 18px;
-	font-weight: 200;
-	line-height: 30px;
-	background-color: #eee;
-	border-radius: 6px;
-	padding: 60px;
+#masthead {
+    display: block;
+    width: 100%;
+    background: antiquewhite;
+    padding-left: 70px;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 20px;
+    color: #ceb69f;
 }
-
-.hero-unit h1 {
-	font-size: 60px;
-	line-height: 1;
-	letter-spacing: -1px;
+#logo {
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    margin: 0;
+    -webkit-transform: scale(0.7, 0.7);
+       -moz-transform: scale(0.7, 0.7);
+        -ms-transform: scale(0.7, 0.7);
+         -o-transform: scale(0.7, 0.7);
+            transform: scale(0.7, 0.7);
 }
 
 .browsehappy {
@@ -46,6 +53,7 @@ body:before {
 }
 .perspective {
 	position: relative;
+    margin: 20px;
 	perspective: 800px;
 	-webkit-perspective: 800px;
 }

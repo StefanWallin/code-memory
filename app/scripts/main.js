@@ -19,7 +19,6 @@ function cardViewModel() {
         }
     });
     self.flip = function() {
-        console.log('flipping', self.flipped());
         if(self.flipped()){
             self.flipped(false);
         } else {
